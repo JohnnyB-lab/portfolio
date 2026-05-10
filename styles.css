@@ -455,6 +455,23 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 5rem;
 }
 
+.profile-photo {
+    width: 320px;
+    height: 380px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center 0%;
+    box-shadow: var(--shadow-lg);
+    border: 5px solid var(--white);
+    outline: 3px solid var(--primary);
+    transition: var(--transition);
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(42, 63, 116, 0.3);
+}
+
 /* ===========================
    Experience Section
    =========================== */
