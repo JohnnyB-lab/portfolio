@@ -11,8 +11,11 @@ hamburger.addEventListener('click', () => {
 const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        // Only handle anchor links (starting with #)
+        if (!href.startsWith('#')) return;
         e.preventDefault();
-        const targetId = link.getAttribute('href').substring(1);
+        const targetId = href.substring(1);
         const targetSection = document.getElementById(targetId);
         if (targetSection) {
             targetSection.scrollIntoView({ behavior: 'smooth' });
