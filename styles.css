@@ -884,6 +884,46 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===========================
+   Visitor Counter
+   =========================== */
+.visitor-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    opacity: 0.85;
+    color: var(--white);
+}
+
+.visitor-counter i {
+    color: var(--accent);
+    font-size: 1rem;
+}
+
+#visitor-count {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--accent);
+    min-width: 30px;
+    display: inline-block;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#visitor-count.bump {
+    transform: scale(1.4);
+}
+
+.visitor-label {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+/* ===========================
    Footer
    =========================== */
 footer {
